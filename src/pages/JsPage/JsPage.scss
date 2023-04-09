@@ -1,0 +1,58 @@
+.JavaScript {
+  position: relative;
+  .animation-first-circle1,
+  .animation-first-circle2,
+  .animation-first-circle3,
+  .animation-first-circle4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--third-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+    opacity: 0.6;
+
+    .animation-second-circle1,
+    .animation-second-circle2,
+    .animation-second-circle3,
+    .animation-second-circle4 {
+      position: relative;
+      top: 0;
+      left: 50;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: var(--background-color);
+    }
+  }
+  .animation-first-circle1 {
+    animation: moveCircle1 80s infinite linear;
+  }
+  .animation-first-circle2 {
+    animation: moveCircle2 80s infinite linear;
+  }
+  .animation-first-circle3 {
+    animation: moveCircle3 80s infinite linear;
+  }
+  .animation-first-circle4 {
+    animation: moveCircle4 80s infinite linear;
+  }
+
+  .ptitle {
+    width: 100%;
+    text-align: center;
+    margin: 10rem 0 5rem 0;
+  }
+
+  .projects-container {
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

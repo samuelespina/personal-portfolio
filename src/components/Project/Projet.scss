@@ -1,0 +1,26 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background: var(--third-color);
+  padding: 0.5rem;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  z-index: 100000;
+
+  &:hover {
+    transform: translateY(1rem) !important;
+  }
+
+  p,
+  a {
+    color: white;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 15rem;
+  }
+}

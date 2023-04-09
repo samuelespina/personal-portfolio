@@ -1,0 +1,11 @@
+:root {
+  --text-color: white;
+  --background-color: #1e1e1e;
+  --second-color: rgba(166, 22, 217, 1);
+  --third-color: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(253, 29, 169, 1) 50%,
+    rgba(166, 22, 217, 1) 100%
+  );
+}

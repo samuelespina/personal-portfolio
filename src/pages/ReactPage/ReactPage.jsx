@@ -1,0 +1,77 @@
+import { Project } from "../../components";
+import pr from "../..//pngtree-img-file-document-icon-png-image_939156.jpg";
+import AOS from "aos";
+import { useEffect } from "react";
+
+const ReactPage = () => {
+  const project3 = [
+    { title: "", img: pr, link: "" },
+    { title: "", img: pr, link: "" },
+    { title: "", img: pr, link: "" },
+    { title: "", img: pr, link: "" },
+  ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  return (
+    <div className="React">
+      <div className="animation-first-circle1">
+        <div className="animation-second-circle1"></div>
+      </div>
+      <div className="animation-first-circle2">
+        <div className="animation-second-circle2"></div>
+      </div>
+      <div className="animation-first-circle3">
+        <div className="animation-second-circle3"></div>
+      </div>
+      <div className="animation-first-circle4">
+        <div className="animation-second-circle4"></div>
+      </div>
+      <article>
+        <h2 data-aos="fade-up">React.js</h2>
+        <h3 data-aos="fade-up">What is React.js?</h3>
+        <p data-aos="fade-up">
+          React JS is a JavaScript front-end framework created by FaceBook, that
+          allows web developers to reuse traditional HTML code using components,
+          to keep the code clean, dynamic, and fast.
+        </p>
+        <p data-aos="fade-up">
+          This framework is declarative, allowing you to automatically update
+          your components according to changes in data.
+        </p>
+        <p data-aos="fade-up">
+          React JS can also help you make a faster website given that it
+          leverages the concept of having a Single Paged Application (SPA).
+        </p>
+        <p className="sep" data-aos="fade-up">
+          I've already done some progects with JavaScript, see these below!
+        </p>
+      </article>
+      <article>
+        <h3 data-aos="fade-up" className="ptitle">
+          Projects
+        </h3>
+        <div className="projects-container">
+          {project3.map((elem, i) => (
+            <div data-aos="fade-up" data-aos-delay={`${i * 300}`}>
+              <Project
+                key={i}
+                title={elem.title}
+                img={elem.img}
+                link={elem.link}
+              />
+            </div>
+          ))}
+        </div>
+      </article>
+    </div>
+  );
+};
+
+export default ReactPage;
