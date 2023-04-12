@@ -6,6 +6,8 @@
     left: 0;
     z-index: -100000;
     width: 100vw;
+    overflow: hidden;
+    height: 100vh;
 
     .shape1 {
       position: absolute;
@@ -252,9 +254,6 @@
 @media (max-width: 768px) {
   .home-page {
     .parallax {
-      left: -6rem;
-      scale: 0.8;
-
       .shape5 {
         transform: translateX(-20rem);
       }
@@ -271,9 +270,6 @@
 @media (max-width: 600px) {
   .home-page {
     .parallax {
-      left: -9rem;
-      scale: 0.8;
-
       .shape5 {
         transform: translateX(-27rem);
       }
@@ -284,10 +280,6 @@
 @media (max-width: 425px) {
   .home-page {
     .parallax {
-      left: -9rem;
-      top: 1.5rem;
-      scale: 0.59;
-
       .shape5 {
         transform: translateX(-25rem);
       }

@@ -4,6 +4,9 @@
   box-sizing: border-box;
   cursor: none;
   font-family: "Inter", sans-serif;
+  @media only screen and (max-width: 600px) {
+    cursor: unset;
+  }
 }
 
 html {
