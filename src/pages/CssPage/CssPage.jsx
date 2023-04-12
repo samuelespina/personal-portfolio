@@ -5,8 +5,16 @@ import AOS from "aos";
 
 const CssPage = () => {
   const project1 = [
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
+    {
+      title: "form",
+      img: pr,
+      link: "https://teal-entremet-a9c843.netlify.app/",
+    },
+    {
+      title: "Product Landing Page",
+      img: pr,
+      link: "https://stellular-biscuit-9555a4.netlify.app/",
+    },
     { title: "", img: pr, link: "" },
     { title: "", img: pr, link: "" },
   ];
