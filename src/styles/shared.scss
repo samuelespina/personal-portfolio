@@ -242,6 +242,10 @@ html {
 }
 
 @media (max-width: 425px) {
+  .cursor {
+    display: none;
+    cursor: auto;
+  }
   html {
     body {
       font-size: 0.8rem;
