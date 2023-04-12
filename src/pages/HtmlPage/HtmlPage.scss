@@ -1,6 +1,7 @@
 .html {
   position: relative;
   margin-top: 10rem;
+  margin-bottom: 15rem;
   .animation-first-circle1,
   .animation-first-circle2,
   .animation-first-circle3,
@@ -47,13 +48,6 @@
     width: 100%;
     text-align: center;
     margin: 10rem 0 5rem 0;
-  }
-
-  .projects-container {
-    margin-bottom: 10rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
 }
 

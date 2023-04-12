@@ -8,7 +8,9 @@ const Project = (props) => {
     >
       <p>{props.title}</p>
       <img src={props.img}></img>
-      <a href={props.link}>view the project</a>
+      <a href={props.link} target="_blank">
+        view the project
+      </a>
     </div>
   );
 };

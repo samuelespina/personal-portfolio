@@ -1,16 +1,7 @@
-import { Project } from "../../components";
-import pr from "../..//pngtree-img-file-document-icon-png-image_939156.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 
 const HtmlPage = () => {
-  const project1 = [
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-  ];
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -60,26 +51,6 @@ const HtmlPage = () => {
             applications directly in their documents.
           </li>
         </ul>
-        <p data-aos="fade-up">
-          I've already done some progects with HTML, see these below!
-        </p>
-      </article>
-      <article>
-        <h3 data-aos="fade-up" className="ptitle">
-          Projects
-        </h3>
-        <div className="projects-container">
-          {project1.map((elem, i) => (
-            <div data-aos="fade-up" data-aos-delay={`${i * 300}`}>
-              <Project
-                key={i}
-                title={elem.title}
-                img={elem.img}
-                link={elem.link}
-              />
-            </div>
-          ))}
-        </div>
       </article>
     </div>
   );
