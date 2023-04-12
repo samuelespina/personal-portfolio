@@ -16,7 +16,7 @@ const CssPage = () => {
       link: "https://stellular-biscuit-9555a4.netlify.app/",
     },
     {
-      title: "Technical Documentation Page",
+      title: "Technical Documentation",
       img: pr,
       link: "https://6436946f28f3be03e307d738--marvelous-baklava-0916a7.netlify.app/",
     },
