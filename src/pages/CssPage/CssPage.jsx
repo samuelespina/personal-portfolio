@@ -15,8 +15,16 @@ const CssPage = () => {
       img: pr,
       link: "https://stellular-biscuit-9555a4.netlify.app/",
     },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
+    {
+      title: "Technical Documentation Page",
+      img: pr,
+      link: "https://6436946f28f3be03e307d738--marvelous-baklava-0916a7.netlify.app/",
+    },
+    {
+      title: "Tribute Page",
+      img: pr,
+      link: "https://643694e509bbae04fe181c10--iridescent-bublanina-69b74f.netlify.app/",
+    },
   ];
   useEffect(() => {
     window.scrollTo(0, 0);
