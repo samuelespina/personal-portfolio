@@ -48,10 +48,10 @@ html {
     background-color: var(--background-color);
     color: var(--text-color);
     font-size: 1.1rem;
-    overflow: hidden;
+    overflow-x: hidden;
 
     main {
-      overflow: hidden;
+      overflow-x: hidden;
 
       h1,
       h2,
