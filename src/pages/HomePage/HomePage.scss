@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     z-index: -100000;
+    width: 100vw;
 
     .shape1 {
       position: absolute;
@@ -112,9 +113,9 @@
 
   .presentation {
     letter-spacing: 1px;
-    height: 100%;
+    height: 100vh;
     width: 85%;
-    margin-top: 5rem;
+    margin-top: 12rem;
 
     .title {
       margin-bottom: -1rem;
@@ -129,8 +130,7 @@
   }
 
   .sk-title {
-    margin-top: 15rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     margin-left: 0;
     max-width: 100%;
     text-align: center;
@@ -153,14 +153,14 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        transform: translateY(1rem) !important;
+        transform: translateY(1rem);
       }
       .skill {
         display: flex;
         justify-content: center;
         align-items: center;
         aspect-ratio: 1/1;
-        width: 15rem;
+        width: 14rem;
         background: var(--third-color);
         border: 2px solid white;
         border-radius: 3rem;
@@ -211,5 +211,92 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-page {
+    .parallax {
+      .shape5 {
+        transform: translateX(-6rem);
+      }
+    }
+    .presentation {
+      margin-top: 8rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .home-page {
+    .parallax {
+      .shape5 {
+        transform: translateX(-19rem);
+      }
+    }
+    .presentation {
+      margin-top: 6rem;
+      margin-bottom: 7rem;
+    }
+    .skills {
+      gap: 6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5rem;
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    .parallax {
+      left: -6rem;
+      scale: 0.8;
+
+      .shape5 {
+        transform: translateX(-20rem);
+      }
+    }
+    .presentation {
+      margin-bottom: 7rem;
+    }
+    .skills {
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    .parallax {
+      left: -9rem;
+      scale: 0.8;
+
+      .shape5 {
+        transform: translateX(-27rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .home-page {
+    .parallax {
+      left: -9rem;
+      top: 1.5rem;
+      scale: 0.59;
+
+      .shape5 {
+        transform: translateX(-25rem);
+      }
+    }
+    .presentation {
+      margin-top: 7rem;
+      margin-bottom: 5rem;
+    }
+    .skills {
+      margin-bottom: 6rem;
+    }
   }
 }

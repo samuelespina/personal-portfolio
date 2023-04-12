@@ -51,7 +51,6 @@ html {
     overflow: hidden;
 
     main {
-      margin-top: 7rem;
       overflow: hidden;
 
       h1,
@@ -88,7 +87,8 @@ html {
 
         li {
           margin-bottom: 2rem;
-          max-width: 60%;
+          max-width: 100%;
+          line-height: 1.2rem;
         }
       }
 
@@ -200,5 +200,77 @@ html {
   }
   100% {
     transform: translate(97vw, 180rem);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    body {
+      font-size: 1rem;
+      main {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    body {
+      main {
+        p {
+          max-width: 90%;
+          margin-left: 3rem;
+        }
+
+        h1 {
+          margin-left: 3rem;
+        }
+
+        h2 {
+          margin-left: 3rem;
+        }
+
+        h3 {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    body {
+      font-size: 0.8rem;
+      main {
+        p {
+          max-width: 100%;
+          margin-left: 1rem;
+          line-height: 2.2rem;
+        }
+
+        ul {
+          margin-left: 3rem;
+        }
+
+        h1 {
+          margin-left: 1rem;
+          font-size: 2.7rem;
+        }
+
+        h2 {
+          margin-left: 1rem;
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          margin-left: 1rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 }

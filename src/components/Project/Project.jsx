@@ -3,6 +3,7 @@ const Project = (props) => {
     <div
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
+      data-aos-offset={-100}
       className="project"
     >
       <p>{props.title}</p>

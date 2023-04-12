@@ -122,7 +122,6 @@ const HomePage = () => {
 
           <h3
             data-aos="fade-right"
-            data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             className="typewriter"
           >
@@ -150,7 +149,7 @@ const HomePage = () => {
           My Skills
         </p>
         <section className="skills">
-          <div data-aos="fade-up" data-aos-delay={300}>
+          <div data-aos="fade-up" data-aos-delay={300} data-aos-offset={0}>
             <div className="skill-wrapper">
               <div
                 className="skill"
@@ -163,7 +162,7 @@ const HomePage = () => {
               <p className="sk-p">HTML5</p>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay={600}>
+          <div data-aos="fade-up" data-aos-delay={600} data-aos-offset={0}>
             {" "}
             <div className="skill-wrapper">
               <div
@@ -178,8 +177,8 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay={900}>
-            <div className="skill-wrapper">
+          <div className="skill-wrapper">
+            <div data-aos="fade-up" data-aos-delay={900} data-aos-offset={-50}>
               <div
                 className="skill"
                 onClick={() => {
@@ -192,7 +191,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay={1200}>
+          <div data-aos="fade-up" data-aos-delay={1200} data-aos-offset={-50}>
             <div className="skill-wrapper">
               <div
                 className="skill"

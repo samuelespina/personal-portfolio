@@ -10,13 +10,16 @@
   z-index: 10000;
 
   &.active {
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7);
     .navbar {
       .skills-area {
-        .menu {
-          background-color: black;
+        .link,
+        .home {
+          color: rgba(255, 255, 255, 0.7);
         }
+      }
+      .link {
+        color: rgba(255, 255, 255, 0.7);
       }
     }
   }
@@ -105,7 +108,7 @@
         width: 8rem;
         height: 0;
         border-radius: 10px;
-        background-color: black;
+        background-color: var(--background-color);
         transition: all 0.5s ease-in-out;
         overflow: hidden;
         opacity: 1;
@@ -140,6 +143,80 @@
             scale: 1.1;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-wrapper {
+    .navbar {
+      .home {
+        margin-right: 27rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-wrapper {
+    .navbar {
+      .home {
+        margin-right: 22rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    .navbar {
+      .home {
+        margin-right: 15rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-wrapper {
+    font-size: 1.1rem;
+    .navbar {
+      .home {
+        margin-right: 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-wrapper {
+    .navbar {
+      font-size: 0.9rem;
+      svg {
+        font-size: 1.4rem;
+      }
+      .home {
+        margin-right: 3rem;
+      }
+      .skills-area {
+        .menu {
+          width: 7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-wrapper {
+    .navbar {
+      font-size: 0.8;
+      .home {
+        margin-right: 0rem;
+      }
+      svg {
+        font-size: 1.2rem;
       }
     }
   }

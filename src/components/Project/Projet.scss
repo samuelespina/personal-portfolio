@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
   background: var(--third-color);
   padding: 0.5rem;
   border-radius: 20px;
@@ -21,6 +20,14 @@
   }
 
   img {
-    width: 15rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .project {
+    img {
+      width: 12rem;
+    }
   }
 }

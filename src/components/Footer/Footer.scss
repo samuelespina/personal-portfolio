@@ -67,3 +67,13 @@ footer {
     }
   }
 }
+
+@media (max-width: 600px) {
+  footer {
+    .contacts {
+      .flex-contacts {
+        column-gap: 3rem;
+      }
+    }
+  }
+}
