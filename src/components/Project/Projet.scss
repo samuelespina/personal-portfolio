@@ -5,12 +5,12 @@
   align-items: center;
   background: var(--third-color);
   padding: 0.5rem;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: all 0.2s ease-in-out;
   z-index: 100000;
 
   &:hover {
-    transform: translateY(1rem) !important;
+    transform: translateY(0.7rem) !important;
   }
 
   p,
@@ -18,13 +18,13 @@
     color: white;
     padding: 0.5rem;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     margin-left: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   img {
-    width: 14rem;
+    width: 13rem;
   }
 }
 

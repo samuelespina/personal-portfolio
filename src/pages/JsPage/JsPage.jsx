@@ -5,10 +5,26 @@ import AOS from "aos";
 
 const JsPage = () => {
   const project2 = [
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
+    {
+      title: "Caesars Cipher",
+      img: pr,
+      link: "https://glistening-sherbet-083360.netlify.app/",
+    },
+    {
+      title: "Palindrome checker",
+      img: pr,
+      link: "https://soft-pegasus-6fd380.netlify.app/",
+    },
+    {
+      title: "Roman Numeral Converter",
+      img: pr,
+      link: "https://stirring-moonbeam-0ebdb3.netlify.app/",
+    },
+    {
+      title: "Telephone Number Validator",
+      img: pr,
+      link: "https://lovely-pony-13cd6c.netlify.app/",
+    },
   ];
 
   useEffect(() => {

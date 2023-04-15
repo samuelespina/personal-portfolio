@@ -5,10 +5,26 @@ import { useEffect } from "react";
 
 const ReactPage = () => {
   const project3 = [
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
-    { title: "", img: pr, link: "" },
+    {
+      title: "random quote machine",
+      img: pr,
+      link: "https://willowy-wisp-70657a.netlify.app/",
+    },
+    {
+      title: "drum machine",
+      img: pr,
+      link: "https://merry-khapse-54bdc0.netlify.app/",
+    },
+    {
+      title: "calculator",
+      img: pr,
+      link: "https://dashing-gecko-3e7b3a.netlify.app/",
+    },
+    {
+      title: "markdown previewer",
+      img: pr,
+      link: "https://effervescent-mooncake-f6f69b.netlify.app/",
+    },
   ];
 
   useEffect(() => {
