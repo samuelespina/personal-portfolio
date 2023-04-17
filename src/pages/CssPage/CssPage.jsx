@@ -1,5 +1,5 @@
 import { Project } from "../../components";
-import pr from "../..//pngtree-img-file-document-icon-png-image_939156.jpg";
+import pr from "../..//Immagine 2023-04-17 083451.png";
 import { useEffect } from "react";
 import AOS from "aos";
 
