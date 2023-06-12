@@ -9,6 +9,7 @@ import {
   faSquareJs,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
+import ts from "../..//icons8-typescript(1).svg";
 
 const HomePage = () => {
   const [currentX, setX] = useState(0);
@@ -177,8 +178,8 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="skill-wrapper">
-            <div data-aos="fade-up" data-aos-delay={900} data-aos-offset={-50}>
+          <div data-aos="fade-up" data-aos-delay={900} data-aos-offset={-25}>
+            <div className="skill-wrapper">
               <div
                 className="skill"
                 onClick={() => {
@@ -190,8 +191,21 @@ const HomePage = () => {
               <p className="sk-p">JAVASCRIPT</p>
             </div>
           </div>
+          <div data-aos="fade-up" data-aos-delay={1200} data-aos-offset={-35}>
+            <div className="skill-wrapper">
+              <div
+                className="skill"
+                onClick={() => {
+                  navigate("/skills-typescript");
+                }}
+              >
+                <img className="ts" src={ts} alt="" />
+              </div>
+              <p className="sk-p">TYPESCRIPT</p>
+            </div>
+          </div>
 
-          <div data-aos="fade-up" data-aos-delay={1200} data-aos-offset={-50}>
+          <div data-aos="fade-up" data-aos-delay={1500} data-aos-offset={-40}>
             <div className="skill-wrapper">
               <div
                 className="skill"

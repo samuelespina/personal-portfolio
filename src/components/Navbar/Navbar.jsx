@@ -92,6 +92,14 @@ const Navbar = () => {
               <hr />
               <p
                 onClick={() => {
+                  navigate("/skills-typescript");
+                }}
+              >
+                TYPESCRIPT
+              </p>
+              <hr />
+              <p
+                onClick={() => {
                   navigate("/skills-react.js");
                 }}
               >

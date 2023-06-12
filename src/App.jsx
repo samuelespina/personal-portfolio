@@ -1,4 +1,11 @@
-import { CssPage, HomePage, HtmlPage, JsPage, ReactPage } from "./pages";
+import {
+  CssPage,
+  HomePage,
+  HtmlPage,
+  JsPage,
+  ReactPage,
+  TsPage,
+} from "./pages";
 import React, { useEffect, useRef } from "react";
 import {
   BrowserRouter,
@@ -46,6 +53,8 @@ const App = () => {
           <Route path="/skills-javascript" element={<JsPage />}></Route>
 
           <Route path="/skills-react.js" element={<ReactPage />}></Route>
+
+          <Route path="//skills-typescript" element={<TsPage />}></Route>
         </Routes>
       </main>
 
