@@ -30,6 +30,8 @@ const ScrollUx = (props) => {
         ref={scrollUxRef}
         icon={faAnglesDown}
       />
+      <p>{props.vanishHeight}</p>
+      <p>{scrollValue}</p>
     </div>
   );
 };
