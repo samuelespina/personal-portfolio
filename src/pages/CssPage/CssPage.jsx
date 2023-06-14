@@ -63,7 +63,7 @@ const CssPage = () => {
           CSS is independent of HTML and can be used with any XML-based markup
           language.
         </p>
-        <p data-aos="fade-up">
+        <p>
           The separation of HTML from CSS makes it easier to maintain sites,
           share style sheets across pages, and tailor pages to different
           environments.

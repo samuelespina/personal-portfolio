@@ -59,7 +59,7 @@ const JsPage = () => {
         </p>
         <p data-aos="fade-up"> Features like:</p>
         <ul>
-          <li data-aos="fade-up">animated graphics</li>
+          <li>animated graphics</li>
           <li data-aos="fade-up">photo slideshows</li>
           <li data-aos="fade-up">autocomplete text suggestions</li>
           <li data-aos="fade-up">interactive forms</li>

@@ -47,12 +47,12 @@ const TsPage = () => {
             JavaScript, allowing developers to add types.
           </p>
           <p data-aos="fade-up"> Why should I use TypeScript?</p>
-          <p data-aos="fade-up">JavaScript is a loosely typed language.</p>
-          <p data-aos="fade-up">
+          <p>JavaScript is a loosely typed language.</p>
+          <p>
             It can be difficult to understand what types of data are being
             passed around in JavaScript.
           </p>
-          <p data-aos="fade-up">
+          <p>
             In JavaScript, function parameters and variables don't have any
             information!
           </p>

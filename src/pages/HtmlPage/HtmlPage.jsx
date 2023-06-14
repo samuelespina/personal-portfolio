@@ -33,7 +33,7 @@ const HtmlPage = () => {
           HTML gives authors the means to:
         </p>
         <ul>
-          <li data-aos="fade-up">
+          <li>
             Publish online documents with headings, text, tables, lists, photos,
             etc.
           </li>

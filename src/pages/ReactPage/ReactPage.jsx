@@ -61,13 +61,11 @@ const ReactPage = () => {
           This framework is declarative, allowing you to automatically update
           your components according to changes in data.
         </p>
-        <p data-aos="fade-up">
+        <p>
           React JS can also help you make a faster website given that it
           leverages the concept of having a Single Paged Application (SPA).
         </p>
-        <p className="sep" data-aos="fade-up">
-          I've already done some progects with JavaScript, see these below!
-        </p>
+        <p>I've already done some progects with JavaScript, see these below!</p>
       </article>
       <article>
         <h3 data-aos="fade-up" className="ptitle">
