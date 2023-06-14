@@ -12,14 +12,18 @@
   &.active {
     background-color: rgba(0, 0, 0, 0.7);
     .navbar {
-      .skills-area {
-        .link,
-        .home {
+      .home {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .options {
+        .skills-area {
+          .link {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+        .link {
           color: rgba(255, 255, 255, 0.7);
         }
-      }
-      .link {
-        color: rgba(255, 255, 255, 0.7);
       }
     }
   }
@@ -37,110 +41,113 @@
 
     .home {
       margin-left: 2rem;
-      margin-right: 35rem;
       transition: 0.3s ease-in-out;
 
       &:hover {
         scale: 1.2;
       }
     }
-
-    .link {
+    .options {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      transition: 0.3s ease-in-out;
-      white-space: nowrap;
-      text-decoration: none;
-      color: var(--text-color);
-      position: relative;
+      margin-right: 2rem;
+      width: 35rem;
 
-      &::after {
-        position: absolute;
-        content: "";
-        width: 0rem;
-        height: 0.3rem;
-        border-radius: 1rem;
-        background: white;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all 0.3s ease-in-out;
-      }
-
-      &:hover {
-        scale: 1.1;
-
-        &::after {
-          width: 100%;
-        }
-      }
-
-      &:last-child {
-        margin-right: 4rem;
-      }
-    }
-    .skills-area {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s ease-in-out;
       .link {
-        svg {
-          margin-left: 0.3rem;
-          font-size: 1.2rem;
-          transition: all 0.2s ease-in-out;
-          transform-origin: 6px 10px;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--text-color);
+        position: relative;
+
         &::after {
-          content: none;
-        }
-        &:hover {
-          svg {
-            transform: rotate(-30deg);
-          }
-        }
-      }
-      .menu {
-        position: absolute;
-        top: 5rem;
-        width: 8rem;
-        height: 0;
-        border-radius: 10px;
-        background-color: var(--background-color);
-        transition: all 0.5s ease-in-out;
-        overflow: hidden;
-        opacity: 1;
-
-        p {
-          width: 100%;
-          text-align: center;
-          padding-bottom: 0.8rem;
-          padding-top: 0.8rem;
-          font-size: 1rem;
-          opacity: 0;
+          position: absolute;
+          content: "";
+          width: 0rem;
+          height: 0.3rem;
+          border-radius: 1rem;
+          background: white;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
           transition: all 0.3s ease-in-out;
+        }
 
-          &:last-child {
-            border-bottom: none;
+        &:hover {
+          scale: 1.1;
+
+          &::after {
+            width: 100%;
           }
         }
       }
-      &.active {
+      .skills-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
         .link {
           svg {
-            transform: rotate(-90deg);
+            margin-left: 0.3rem;
+            margin-right: -0.5rem;
+            font-size: 1.2rem;
+            transition: all 0.2s ease-in-out;
+            transform-origin: 6px 10px;
+          }
+          &::after {
+            content: none;
+          }
+          &:hover {
+            svg {
+              transform: rotate(-30deg);
+            }
           }
         }
         .menu {
-          height: 14.7rem;
-          border: 1px solid rgb(255, 255, 255, 0.5);
-        }
-        p {
+          position: absolute;
+          top: 5rem;
+          width: 8rem;
+          height: 0;
+          border-radius: 10px;
+          background-color: var(--background-color);
+          transition: all 0.5s ease-in-out;
+          overflow: hidden;
           opacity: 1;
-          &:hover {
-            scale: 1.1;
+
+          p {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 0.8rem;
+            padding-top: 0.8rem;
+            font-size: 1rem;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+        &.active {
+          .link {
+            svg {
+              transform: rotate(-90deg);
+            }
+          }
+          .menu {
+            height: 14.7rem;
+            border: 1px solid rgb(255, 255, 255, 0.5);
+          }
+          p {
+            opacity: 1;
+            &:hover {
+              scale: 1.1;
+            }
           }
         }
       }
@@ -197,11 +204,17 @@
         font-size: 1.4rem;
       }
       .home {
-        margin-right: 3rem;
+        margin: 0 3rem 0 1rem;
       }
-      .skills-area {
-        .menu {
-          width: 7rem;
+      .options {
+        margin-right: 1rem;
+        width: 17rem;
+        .skills-area {
+          .menu {
+            top: 3rem;
+            scale: 0.75;
+            width: 7rem;
+          }
         }
       }
     }
