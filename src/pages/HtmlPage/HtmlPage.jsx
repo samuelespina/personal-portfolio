@@ -3,7 +3,7 @@ import AOS from "aos";
 import { ScrollUx } from "../../components";
 
 const HtmlPage = () => {
-  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+  const [maxScrollHeight, setMaxScrollHeight] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
