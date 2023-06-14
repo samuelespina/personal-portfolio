@@ -49,17 +49,17 @@ const CssPage = () => {
         <div className="animation-second-circle4"></div>
       </div>
       <article>
-        <h2 data-aos="fade-up">CSS</h2>
-        <h3 data-aos="fade-up">What is CSS?</h3>
-        <p data-aos="fade-up">
+        <h2 data-aos="fade-right">CSS</h2>
+        <h3 data-aos="fade-right">What is CSS?</h3>
+        <p>
           CSS is the language for describing the presentation of Web pages,
           including colors, layout, and fonts.
         </p>
-        <p data-aos="fade-up">
+        <p>
           It allows one to adapt the presentation to different types of devices,
           such as large screens, small screens, or printers.
         </p>
-        <p data-aos="fade-up">
+        <p>
           CSS is independent of HTML and can be used with any XML-based markup
           language.
         </p>

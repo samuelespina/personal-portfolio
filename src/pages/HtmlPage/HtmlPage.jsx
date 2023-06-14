@@ -25,9 +25,9 @@ const HtmlPage = () => {
         <div className="animation-second-circle4"></div>
       </div>
       <article>
-        <h2 data-aos="fade-up">HTML</h2>
-        <h3 data-aos="fade-up">What is HTML?</h3>
-        <p data-aos="fade-up">
+        <h2 data-aos="fade-right">HTML</h2>
+        <h3 data-aos="fade-right">What is HTML?</h3>
+        <p>
           HTML is the language for describing the structure of Web pages.
           <br></br>
           HTML gives authors the means to:

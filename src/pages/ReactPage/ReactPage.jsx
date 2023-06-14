@@ -50,14 +50,14 @@ const ReactPage = () => {
         <div className="animation-second-circle4"></div>
       </div>
       <article>
-        <h2 data-aos="fade-up">React.js</h2>
-        <h3 data-aos="fade-up">What is React.js?</h3>
-        <p data-aos="fade-up">
+        <h2 data-aos="fade-right">React.js</h2>
+        <h3 data-aos="fade-right">What is React.js?</h3>
+        <p>
           React JS is a JavaScript front-end framework created by FaceBook, that
           allows web developers to reuse traditional HTML code using components,
           to keep the code clean, dynamic, and fast.
         </p>
-        <p data-aos="fade-up">
+        <p>
           This framework is declarative, allowing you to automatically update
           your components according to changes in data.
         </p>

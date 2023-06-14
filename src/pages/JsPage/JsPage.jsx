@@ -49,15 +49,15 @@ const JsPage = () => {
         <div className="animation-second-circle4"></div>
       </div>
       <article>
-        <h2 data-aos="fade-up">JavaScript</h2>
-        <h3 data-aos="fade-up">What is JavaScript?</h3>
-        <p data-aos="fade-up">
+        <h2 data-aos="fade-right">JavaScript</h2>
+        <h3 data-aos="fade-right">What is JavaScript?</h3>
+        <p>
           JavaScript is a scripting language used to create and control dynamic
           website content, i.e. anything that moves, refreshes, or otherwise
           changes on your screen without requiring you to manually reload a web
           page.
         </p>
-        <p data-aos="fade-up"> Features like:</p>
+        <p> Features like:</p>
         <ul>
           <li>animated graphics</li>
           <li data-aos="fade-up">photo slideshows</li>

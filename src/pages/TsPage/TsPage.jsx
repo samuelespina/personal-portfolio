@@ -36,17 +36,17 @@ const TsPage = () => {
           <div className="animation-second-circle4"></div>
         </div>
         <section>
-          <h2 data-aos="fade-up">Typescript</h2>
-          <h3 data-aos="fade-up">What is typescript?</h3>
-          <p data-aos="fade-up">
+          <h2 data-aos="fade-right">Typescript</h2>
+          <h3 data-aos="fade-right">What is typescript?</h3>
+          <p>
             TypeScript is a syntactic superset of JavaScript which adds static
             typing.
           </p>
-          <p data-aos="fade-up">
+          <p>
             This basically means that TypeScript adds syntax on top of
             JavaScript, allowing developers to add types.
           </p>
-          <p data-aos="fade-up"> Why should I use TypeScript?</p>
+          <p> Why should I use TypeScript?</p>
           <p>JavaScript is a loosely typed language.</p>
           <p>
             It can be difficult to understand what types of data are being
