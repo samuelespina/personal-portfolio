@@ -1,6 +1,6 @@
-import { Project } from "../../components";
+import { Project, ScrollUx } from "../../components";
 import pr from "../..//Immagine 2023-04-17 083451.png";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import AOS from "aos";
 
 const JsPage = () => {
@@ -27,6 +27,8 @@ const JsPage = () => {
     },
   ];
 
+  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -34,8 +36,14 @@ const JsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    setMaxScrollHeight(window.scrollMaxY);
+  }, []);
+
   return (
     <div className="JavaScript">
+      <ScrollUx vanishHeight={window.scrollMaxY - 350} />
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
       </div>
@@ -51,15 +59,15 @@ const JsPage = () => {
       <article>
         <h2 data-aos="fade-right">JavaScript</h2>
         <h3 data-aos="fade-right">What is JavaScript?</h3>
-        <p>
+        <p data-aos="fade-up">
           JavaScript is a scripting language used to create and control dynamic
           website content, i.e. anything that moves, refreshes, or otherwise
           changes on your screen without requiring you to manually reload a web
           page.
         </p>
-        <p> Features like:</p>
+        <p data-aos="fade-up"> Features like:</p>
         <ul>
-          <li>animated graphics</li>
+          <li data-aos="fade-up">animated graphics</li>
           <li data-aos="fade-up">photo slideshows</li>
           <li data-aos="fade-up">autocomplete text suggestions</li>
           <li data-aos="fade-up">interactive forms</li>

@@ -1,6 +1,6 @@
-import { Project } from "../../components";
+import { Project, ScrollUx } from "../../components";
 import pr from "../..//Immagine 2023-04-17 083451.png";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import AOS from "aos";
 
 const CssPage = () => {
@@ -26,6 +26,8 @@ const CssPage = () => {
       link: "https://643694e509bbae04fe181c10--iridescent-bublanina-69b74f.netlify.app/",
     },
   ];
+  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,8 +36,14 @@ const CssPage = () => {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    setMaxScrollHeight(window.scrollMaxY);
+  }, []);
+
   return (
     <div className="css">
+      <ScrollUx vanishHeight={maxScrollHeight - 350} />
+
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
       </div>
@@ -51,19 +59,19 @@ const CssPage = () => {
       <article>
         <h2 data-aos="fade-right">CSS</h2>
         <h3 data-aos="fade-right">What is CSS?</h3>
-        <p>
+        <p data-aos="fade-up">
           CSS is the language for describing the presentation of Web pages,
           including colors, layout, and fonts.
         </p>
-        <p>
+        <p data-aos="fade-up">
           It allows one to adapt the presentation to different types of devices,
           such as large screens, small screens, or printers.
         </p>
-        <p>
+        <p data-aos="fade-up">
           CSS is independent of HTML and can be used with any XML-based markup
           language.
         </p>
-        <p>
+        <p data-aos="fade-up">
           The separation of HTML from CSS makes it easier to maintain sites,
           share style sheets across pages, and tailor pages to different
           environments.

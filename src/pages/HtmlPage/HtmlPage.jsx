@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
+import { ScrollUx } from "../../components";
 
 const HtmlPage = () => {
+  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,8 +13,14 @@ const HtmlPage = () => {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    setMaxScrollHeight(window.scrollMaxY);
+  }, []);
+
   return (
     <div className="html">
+      <ScrollUx vanishHeight={maxScrollHeight - 350} />
+
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
       </div>
@@ -27,13 +36,13 @@ const HtmlPage = () => {
       <article>
         <h2 data-aos="fade-right">HTML</h2>
         <h3 data-aos="fade-right">What is HTML?</h3>
-        <p>
+        <p data-aos="fade-up">
           HTML is the language for describing the structure of Web pages.
           <br></br>
           HTML gives authors the means to:
         </p>
         <ul>
-          <li>
+          <li data-aos="fade-up">
             Publish online documents with headings, text, tables, lists, photos,
             etc.
           </li>

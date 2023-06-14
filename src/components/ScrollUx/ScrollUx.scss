@@ -1,0 +1,44 @@
+.scroll-ux {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .arrows {
+    font-size: 2rem;
+    animation: Arrow-animation 2.5s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+
+    &.active {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes Arrow-animation {
+  0% {
+    transform: translateY(0%);
+  }
+  10% {
+    transform: translateY(-0.5rem);
+  }
+  20% {
+    transform: translateY(+0.4rem);
+  }
+  30% {
+    transform: translateY(-0.5rem);
+  }
+  40% {
+    transform: translateY(+0.4rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  60% {
+    transform: translateY(0);
+  }
+}

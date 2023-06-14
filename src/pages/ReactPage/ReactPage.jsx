@@ -1,7 +1,7 @@
-import { Project } from "../../components";
+import { Project, ScrollUx } from "../../components";
 import pr from "../..//Immagine 2023-04-17 083451.png";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const ReactPage = () => {
   const project3 = [
@@ -27,6 +27,8 @@ const ReactPage = () => {
     },
   ];
 
+  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -35,8 +37,13 @@ const ReactPage = () => {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    setMaxScrollHeight(window.scrollMaxY);
+  }, []);
+
   return (
     <div className="React">
+      <ScrollUx vanishHeight={window.scrollMaxY - 350} />
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
       </div>
@@ -52,20 +59,22 @@ const ReactPage = () => {
       <article>
         <h2 data-aos="fade-right">React.js</h2>
         <h3 data-aos="fade-right">What is React.js?</h3>
-        <p>
+        <p data-aos="fade-up">
           React JS is a JavaScript front-end framework created by FaceBook, that
           allows web developers to reuse traditional HTML code using components,
           to keep the code clean, dynamic, and fast.
         </p>
-        <p>
+        <p data-aos="fade-up">
           This framework is declarative, allowing you to automatically update
           your components according to changes in data.
         </p>
-        <p>
+        <p data-aos="fade-up">
           React JS can also help you make a faster website given that it
           leverages the concept of having a Single Paged Application (SPA).
         </p>
-        <p>I've already done some progects with JavaScript, see these below!</p>
+        <p data-aos="fade-up">
+          I've already done some progects with JavaScript, see these below!
+        </p>
       </article>
       <article>
         <h3 data-aos="fade-up" className="ptitle">

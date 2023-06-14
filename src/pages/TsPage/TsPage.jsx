@@ -1,6 +1,6 @@
 import React from "react";
-import { useEffect } from "react";
-import { Project } from "../../components";
+import { useState, useEffect } from "react";
+import { Project, ScrollUx } from "../../components";
 import pr from "../..//Immagine 2023-04-17 083451.png";
 import AOS from "aos";
 
@@ -13,6 +13,8 @@ const TsPage = () => {
     },
   ];
 
+  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,9 +22,15 @@ const TsPage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  useEffect(() => {
+    setMaxScrollHeight(window.scrollMaxY);
+  }, []);
+
   return (
     <>
       <div className="typescript">
+        <ScrollUx vanishHeight={window.scrollMaxY - 350} />
         <div className="animation-first-circle1">
           <div className="animation-second-circle1"></div>
         </div>
@@ -38,21 +46,21 @@ const TsPage = () => {
         <section>
           <h2 data-aos="fade-right">Typescript</h2>
           <h3 data-aos="fade-right">What is typescript?</h3>
-          <p>
+          <p data-aos="fade-up">
             TypeScript is a syntactic superset of JavaScript which adds static
             typing.
           </p>
-          <p>
+          <p data-aos="fade-up">
             This basically means that TypeScript adds syntax on top of
             JavaScript, allowing developers to add types.
           </p>
-          <p> Why should I use TypeScript?</p>
-          <p>JavaScript is a loosely typed language.</p>
-          <p>
+          <p data-aos="fade-up"> Why should I use TypeScript?</p>
+          <p data-aos="fade-up">JavaScript is a loosely typed language.</p>
+          <p data-aos="fade-up">
             It can be difficult to understand what types of data are being
             passed around in JavaScript.
           </p>
-          <p>
+          <p data-aos="fade-up">
             In JavaScript, function parameters and variables don't have any
             information!
           </p>
