@@ -38,12 +38,15 @@ const JsPage = () => {
   }, []);
 
   useEffect(() => {
-    setMaxScrollHeight(window.scrollMaxY);
+    setMaxScrollHeight(
+      document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
+    );
   }, []);
 
   return (
     <div className="JavaScript">
-      <ScrollUx vanishHeight={window.scrollMaxY - 350} />
+      <ScrollUx vanishHeight={maxScrollHeight - 450} />
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
       </div>

@@ -24,13 +24,16 @@ const TsPage = () => {
   }, []);
 
   useEffect(() => {
-    setMaxScrollHeight(window.scrollMaxY);
+    setMaxScrollHeight(
+      document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
+    );
   }, []);
 
   return (
     <>
       <div className="typescript">
-        <ScrollUx vanishHeight={window.scrollMaxY - 350} />
+        <ScrollUx vanishHeight={maxScrollHeight - 350} />
         <div className="animation-first-circle1">
           <div className="animation-second-circle1"></div>
         </div>
