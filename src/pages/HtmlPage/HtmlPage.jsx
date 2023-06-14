@@ -14,7 +14,10 @@ const HtmlPage = () => {
   }, []);
 
   useEffect(() => {
-    setMaxScrollHeight(window.scrollMaxY);
+    setMaxScrollHeight(
+      document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
+    );
   }, []);
 
   return (
