@@ -27,7 +27,7 @@ const JsPage = () => {
     },
   ];
 
-  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+  const [maxScrollHeight, setMaxScrollHeight] = useState(0);
 
   useEffect(() => {
     AOS.init();

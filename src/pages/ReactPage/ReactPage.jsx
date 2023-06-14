@@ -27,7 +27,7 @@ const ReactPage = () => {
     },
   ];
 
-  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+  const [maxScrollHeight, setMaxScrollHeight] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -26,7 +26,7 @@ const CssPage = () => {
       link: "https://643694e509bbae04fe181c10--iridescent-bublanina-69b74f.netlify.app/",
     },
   ];
-  const [maxScrollHeight, setMaxScrollHeight] = useState(window.scrollMaxY);
+  const [maxScrollHeight, setMaxScrollHeight] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);

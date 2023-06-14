@@ -19,7 +19,7 @@ const HtmlPage = () => {
 
   return (
     <div className="html">
-      <ScrollUx vanishHeight={maxScrollHeight - 350} />
+      <ScrollUx vanishHeight={maxScrollHeight} />
 
       <div className="animation-first-circle1">
         <div className="animation-second-circle1"></div>
